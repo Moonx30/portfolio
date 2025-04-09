@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .header {
+    background: #1e293b;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #1e293b;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #cbd5e1;
+  }
+  
+  /* Header Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* هنا نحدد الأزرار لتكون على اليمين */
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #38bdf8;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.hire-btn {
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+html {
+  scroll-behavior: smooth; /* يجعل التمرير سلسًا بين الأقسام عند الضغط على الرابط */
+}
+
+
+.hire-btn:hover {
+  background: #0ea5e9;
+}
+/* لتنسيق الصورة */
+.coding-image {
+  width: 300px; /* تعديل الحجم حسب الحاجة */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* توسيط الصورة */
+  border-radius: 10px; /* زاوية دائرية خفيفة */
+}
+
+
+  
+  /* Hero */
+  .hero {
+    padding: 100px 0;
+    background: linear-gradient(120deg, #0f172a 60%, #1e293b);
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .hero .text h2 {
+    font-size: 28px;
+    color: #94a3b8;
+  }
+  
+  .hero .text h1 {
+    font-size: 56px;
+    color: #f8fafc;
+  }
+  
+  .hero .text p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #cbd5e1;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1e293b;
+    color: #38bdf8;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #0ea5e9;
+  }
+  
+  .hero .image img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(56, 189, 248, 0.3);
+  }
+
+
+  /* === About Section === */
+.about-section {
+  background: #1e293b; /* خلفية بسيطة بلون داكن */
+  padding: 60px 0; /* المسافة حول القسم */
+  text-align: center; /* توسيط النص */
+  color: #f8fafc; /* تغيير اللون إلى الأبيض */
+  border-radius: 8px; /* زاوية دائرية ناعمة */
+}
+
+.about-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #38bdf8; /* لون العنوان */
+  margin-bottom: 20px; /* تباعد بين العنوان والنص */
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 900px; /* تحديد عرض النص */
+  margin: 0 auto; /* جعل النص في المنتصف */
+  color: #e2e8f0; /* لون النص */
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* إضافة خلفية بسيطة */
+  opacity: 0.1; /* جعل الخلفية شبه شفافة */
+  z-index: -1; /* وضع الخلفية تحت النص */
+}
+
+  
+  /* Sections */
+  section {
+    padding: 100px 0;
+  }
+  /* === Certificates Section === */
+.certificates-section {
+  background: #1e293b; /* خلفية فاتحة */
+  padding: 60px 0;
+  text-align: center;
+  color: #333;
+}
+
+.certificates-section h2 {
+  font-size: 36px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* شبكة مرنة */
+  gap: 25px;
+  padding: 60px 0;
+  justify-items: center;
+}
+
+.certificate-item {
+  background: #f8eaeaa4;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 60%; /* يمكنك تقليص العرض حسب الحاجة */
+  margin: 0 auto; /* لجعل الشهادات في المنتصف */
+  border: 1px solid #ccc; /* البوردر الأبيض (تم تغييره إلى لون رمادي فاتح) */
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.certificate-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+  
+  .about-section,
+  .skills-section,
+ /* === Contact Section === */
+.contact-header {
+  text-align: center; /* لتوسيط "Contact Me" */
+  margin-bottom: 30px; /* تباعد بين العنوان والأيقونات */
+}
+
+.contact-header h2 {
+  font-size: 36px;
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 20px; /* تباعد بين العنوان والأيقونات */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 50px;  /* تحديد حجم الأيقونات */
+  height: 50px; /* تحديد حجم الأيقونات */
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* تكبير الأيقونة عند التمرير بالماوس */
+}
+
+  
+  /* === Skills Elegant Style === */
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:6px;
+  color: #38bdf8;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.skill-percent {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.progress-bar {
+  width: 80%;
+  background-color: #334155;
+  height: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, #7f5af0, #38bdf8);
+  width: 0;
+  animation: fillBar 2s ease forwards;
+  border-radius: 6px;
+}
+
+/* Animation for the progress bars */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
+  
+  /* Contact Form */
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* إضافة نمط هندسي */
+    opacity: 0.1; /* جعل الخلفية شبه شفافة */
+    z-index: -1; /* وضع الخلفية تحت النص */}
+  .contact-form {
+    display: center;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: #f1f5f9;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: #0ea5e9;
+  }
+
+
+ 
+
+  /* === Social Media Icons Section === */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.social-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero .image img {
+      margin-top: 30px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  /* العناصر التي ستتحرك */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
