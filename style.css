@@ -205,7 +205,7 @@ html {
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 60%; /* يمكنك تقليص العرض حسب الحاجة */
+  width: 70%; /* يمكنك تقليص العرض حسب الحاجة */
   margin: 0 auto; /* لجعل الشهادات في المنتصف */
   border: 1px solid #ccc; /* البوردر الأبيض (تم تغييره إلى لون رمادي فاتح) */
 }
