@@ -36,9 +36,10 @@
   }
   
   /* Header Navbar */
+/* === General Navbar === */
 .navbar {
   display: flex;
-  justify-content: flex-end; /* هنا نحدد الأزرار لتكون على اليمين */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -50,7 +51,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #38bdf8;
+  color: #0ea5e9;
   transition: color 0.3s ease;
 }
 
@@ -67,14 +68,50 @@
   font-weight: 500;
   transition: background 0.3s ease;
 }
-html {
-  scroll-behavior: smooth; /* يجعل التمرير سلسًا بين الأقسام عند الضغط على الرابط */
-}
-
 
 .hire-btn:hover {
   background: #0ea5e9;
 }
+
+/* === Hamburger Menu (الهامبرغر) === */
+.hamburger-menu {
+  display: none; /* مخفي بشكل افتراضي */
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* === Media Query for Mobile === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* إخفاء الروابط في الأجهزة الصغيرة */
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: #0f172a; /* خلفية داكنة للقائمة المنسدلة */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    color: #fff;
+  }
+
+  .nav-links.active {
+    display: flex; /* إظهار الروابط عند تفعيل القائمة */
+  }
+
+  .hamburger-menu {
+    display: flex; /* إظهار زر الهامبرغر في الأجهزة الصغيرة */
+  }
+}
+
 
 /* لتنسيق الصورة */
 .coding-image {

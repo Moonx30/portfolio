@@ -26,6 +26,21 @@
               </nav>
     </div>
   </header>
+   <!-- Hamburger Menu Icon (يظهر فقط في الهواتف) -->
+   <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active'); // تفعيل أو إخفاء القائمة عند الضغط على زر الهامبرغر
+  }
+</script>
+
 
   <!-- Hero -->
   <section id="home" class="hero">
