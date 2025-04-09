@@ -76,39 +76,6 @@ html {
   background: #0ea5e9;
 }
 
-
-/* === Media Queries for Mobile === */
-@media (max-width: 768px) {
-  .header {
-    padding: 10px 0; /* تقليل المسافة العليا والسفلى في الهيدر */
-    flex-direction: column; /* ترتيب الهيدر عموديًا على الشاشات الصغيرة */
-    align-items: flex-start; /* محاذاة العناصر على اليسار */
-  }}
-
-  .navbar {
-    width: 100%; /* جعل شريط التنقل يمتد لعرض الشاشة */
-    justify-content: space-between; /* توزيع العناصر بشكل جيد */
-    padding: 10px; /* إضافة تباعد حول شريط التنقل */
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column; /* عرض الروابط عموديًا */
-    gap: 10px; /* المسافة بين الروابط */
-    text-align: left; /* محاذاة النص إلى اليسار */
-  }
-
-
-
-
-
-
-
-
-
-
-
-
 /* لتنسيق الصورة */
 .coding-image {
   width: 300px; /* تعديل الحجم حسب الحاجة */
